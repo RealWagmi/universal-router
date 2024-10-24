@@ -1,5 +1,5 @@
 {
-  "name": "@real-wagmi/universal-router",
+  "name": "@real-wagmi/universal-router-sdk",
   "version": "1.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,7 +35,10 @@
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   },
-  "repository": "https://github.com/RealWagmi/universal-router.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealWagmi/universal-router.git"
+  },
   "keywords": [
     "wagmi",
     "ethereum"

@@ -1,0 +1,31 @@
+import { ChainId } from '@real-wagmi/sdk';
+import { Address } from 'viem';
+
+const UNIVERSAL_ROUTER_ADDRESSES: Record<ChainId, Address | undefined> = {
+    [ChainId.ETHEREUM]: '0x4E537A3A1E59FCdfA225FA470976B356786888Cc',
+    [ChainId.BSC]: '0x1cA13E2f086A2f664Cd1FF8753110D760411314A',
+    [ChainId.ZKSYNC]: '0x718AeA365b83AFF91e561597ab9D4225f632b52a',
+    [ChainId.FANTOM]: '0x660FC63608A4641267e958Ee254DC0A275D0eD6e',
+    [ChainId.ARBITRUM]: '0x8bb1Be7acD806BF6C9766486dC4c21284a472BaC',
+    [ChainId.KAVA]: '0xE88b19885935B4Be8dCF38e2C96b8c73CfC9b6e2',
+    [ChainId.OPTIMISM]: '0x765c286762cC4B9Da61b5515Ecc026421819Cd12',
+    [ChainId.METIS]: '0x7301350CC76D669ea384e77aF38a70C61661CA48',
+    [ChainId.METIS_SEPOLIA]: '0x6dF85fD781ddDAbD7f12835f1ff847Db6F14Ca2c',
+    [ChainId.ZKLINK]: '0x1787C3655fc4646dd25CEaf020536AA13830a926',
+    [ChainId.IOTA]: '0xcc977eD38Fad0E999f33e57BBed47f4944a67baE',
+    [ChainId.AVALANCHE]: '0xA6D200ED01389b49E21D8A0018d5b81528bcFC0D',
+    [ChainId.POLYGON]: '0xca65646301803f2be98951f3369808adBa588F64',
+    [ChainId.BASE]: '0x08d6E1aE0f91423dDBD16f083ca39ccDd1D79cE8',
+    [ChainId.BLAST]: undefined,
+    [ChainId.SONIC_TESTNET]: '0x6dF85fD781ddDAbD7f12835f1ff847Db6F14Ca2c',
+};
+
+export const getUniversalRouterAddress = (chainId: ChainId): Address => {
+    const address = UNIVERSAL_ROUTER_ADDRESSES[chainId];
+    if (!address) throw new Error(`Universal Router not deployed on chain ${chainId}`);
+    return address;
+};
+
+export const CONTRACT_BALANCE = 2n ** 255n;
+export const SENDER_AS_RECIPIENT = '0x0000000000000000000000000000000000000001';
+export const ROUTER_AS_RECIPIENT = '0x0000000000000000000000000000000000000002';

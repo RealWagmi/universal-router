@@ -1,7 +1,7 @@
 import { ChainId } from '@real-wagmi/sdk';
 import { Address } from 'viem';
 
-const UNIVERSAL_ROUTER_ADDRESSES: Record<ChainId, Address> = {
+const UNIVERSAL_ROUTER_ADDRESSES = {
     [ChainId.ETHEREUM]: '0x4E537A3A1E59FCdfA225FA470976B356786888Cc',
     [ChainId.BSC]: '0x1cA13E2f086A2f664Cd1FF8753110D760411314A',
     [ChainId.ZKSYNC]: '0x718AeA365b83AFF91e561597ab9D4225f632b52a',
@@ -15,8 +15,9 @@ const UNIVERSAL_ROUTER_ADDRESSES: Record<ChainId, Address> = {
     [ChainId.AVALANCHE]: '0xA6D200ED01389b49E21D8A0018d5b81528bcFC0D',
     [ChainId.POLYGON]: '0xca65646301803f2be98951f3369808adBa588F64',
     [ChainId.BASE]: '0x08d6E1aE0f91423dDBD16f083ca39ccDd1D79cE8',
-    [ChainId.SONIC_TESTNET]: '0x6dF85fD781ddDAbD7f12835f1ff847Db6F14Ca2c',
-};
+    [ChainId.SONIC_TESTNET]: '0xb1F795776cB9DdAC6E7e162f31C7419Dd3d48297',
+    [ChainId.SONIC]: '0xC81dAe2Cdf2f6C0076aE3E174a54985040626D19'
+} satisfies Record<ChainId, Address>;
 
 export const getUniversalRouterAddress = (chainId: ChainId): Address => {
     const address = UNIVERSAL_ROUTER_ADDRESSES[chainId];

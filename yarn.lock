@@ -1467,20 +1467,20 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@real-wagmi/permit2-sdk@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@real-wagmi/permit2-sdk/-/permit2-sdk-1.0.3.tgz#c31b0f37ebcfcddde9230e69a4534b0ac430d0f0"
-  integrity sha512-yeDvY3jCT74PERdDWp0U0+sXTkFgUhKa27XHdfLNFOLgyhlYSira6+cnKrBhGz4mK03tH12iNQexktGd+dH1nA==
+"@real-wagmi/permit2-sdk@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@real-wagmi/permit2-sdk/-/permit2-sdk-1.0.4.tgz#71fd441b590004f465413594998879936bf4374a"
+  integrity sha512-cllrtGO15exc7hGkle5sYBN2gXD0DCBA5Y/16joaCJ+/JHFnvxXiM2mIt//Wyi1tAWZ1LHt45994IYolny/QiA==
   dependencies:
-    "@real-wagmi/sdk" "^1.4.4"
+    "@real-wagmi/sdk" "^1.4.5"
     tiny-invariant "^1.3.1"
     viem "^2.7.20"
     vitest "^1.3.1"
 
-"@real-wagmi/sdk@1.4.4", "@real-wagmi/sdk@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@real-wagmi/sdk/-/sdk-1.4.4.tgz#692986db9e09ee8f77b1f3e2408fd3aa110b0f18"
-  integrity sha512-hQX21hH3TZgPypbxBOaddpqBKVJrD6LcHgXEETRw8feh6t6XuJaM83fXiWK7Lh0J7S/DKtAuVKFjuCVSwnz77g==
+"@real-wagmi/sdk@1.4.5", "@real-wagmi/sdk@^1.4.5":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@real-wagmi/sdk/-/sdk-1.4.5.tgz#967bc7494934241941eb45de6eab0b92d610bc1d"
+  integrity sha512-IfCA86jWWswli86yBPK194IzuMDLBGkuKSvHNjW9xTmlhAKP9lOGD26W6Z50zLMokv0WfxqoH69KS2Z/kOFecA==
   dependencies:
     "@uniswap/token-lists" "1.0.0-beta.33"
     big.js "^6.2.1"
@@ -1490,13 +1490,13 @@
     viem "^2.7.20"
     vitest "^1.3.1"
 
-"@real-wagmi/smart-router@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@real-wagmi/smart-router/-/smart-router-1.4.2.tgz#c2894618ca30d72fe2c20d90345bc7701c1f87e6"
-  integrity sha512-8YwAO5eNv37f5By5++Z/U5yKdCE4Px0PLTBtIIN78u9B7qq04GwOt8evNUvBi19KLm8JImjQDPVjwsGeMrUi2g==
+"@real-wagmi/smart-router@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@real-wagmi/smart-router/-/smart-router-1.4.4.tgz#318d99373aae965c52d0afed2d7f6436d8722953"
+  integrity sha512-M7rni8nNmRrKCKDvsO2zXfOu7AwJUIYhz0bxQhK1J2om0s13jYuhhsgcaIXTgn2HQANYgTgs8JytvbCxXRu0+g==
   dependencies:
-    "@real-wagmi/sdk" "1.4.4"
-    "@real-wagmi/v3-sdk" "1.4.2"
+    "@real-wagmi/sdk" "1.4.5"
+    "@real-wagmi/v3-sdk" "1.4.3"
     async-retry "^1.3.3"
     graphql "^16.8.1"
     graphql-request "^6.1.0"
@@ -1506,12 +1506,12 @@
     viem "^1.19.11"
     zod "^3.22.4"
 
-"@real-wagmi/v3-sdk@1.4.2", "@real-wagmi/v3-sdk@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@real-wagmi/v3-sdk/-/v3-sdk-1.4.2.tgz#bdc33001a5e946dfc705cc5aa4f402314e361573"
-  integrity sha512-dow8oIsmiLKSex5MxB2BLx/gYjRYO1XAD9jdF92mPeYoXJeQfxNNADLvVtTToHQVsLD48LCn1TYg4j0UjMzJkg==
+"@real-wagmi/v3-sdk@1.4.3", "@real-wagmi/v3-sdk@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@real-wagmi/v3-sdk/-/v3-sdk-1.4.3.tgz#e03e3c47fde1cb0a5165ad7078130be9da367fed"
+  integrity sha512-9V1d8DDspa8U6Y3GNT9Jaxb2vz/C0uFZxtfPFVwZ/qZ1brtwQVJYM0ZnJXzFq+umBiloAjeTQmEjyosJqZUAkw==
   dependencies:
-    "@real-wagmi/sdk" "1.4.4"
+    "@real-wagmi/sdk" "1.4.5"
     viem "^2.7.22"
 
 "@rollup/plugin-babel@^5.1.0":
